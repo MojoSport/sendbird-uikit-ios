@@ -68,7 +68,7 @@ public class SBUMain: NSObject {
             
             SBUMain.updateUserInfo(
                 nickname: updatedNickname,
-                profileUrl: currentUser.profileUrl ?? user?.profileUrl
+                profileUrl: user?.profileUrl
             ) { error in
                 
                 guard error == nil else {
