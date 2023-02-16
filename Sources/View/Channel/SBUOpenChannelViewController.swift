@@ -971,6 +971,7 @@ open class SBUOpenChannelViewController: SBUBaseChannelViewController {
         guard let channel = self.channel else { return }
         
         let channelSettingsVC = SBUOpenChannelSettingsViewController(channel: channel)
+        channelSettingsVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(channelSettingsVC, animated: true)
     }
     
@@ -978,6 +979,7 @@ open class SBUOpenChannelViewController: SBUBaseChannelViewController {
         guard let channel = self.channel else { return }
         
         let memberListVC = SBUMemberListViewController(channel: channel, type: .participants)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     

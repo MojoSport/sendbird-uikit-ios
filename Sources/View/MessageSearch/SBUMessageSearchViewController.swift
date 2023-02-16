@@ -443,7 +443,8 @@ open class SBUMessageSearchViewController: SBUBaseViewController {
                                                  messageListParams: messageListParams)
         channelVc.highlightInfo = highlightInfo
         channelVc.useRightBarButtonItem = false
-        
+
+        channelVc.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(channelVc, animated: true)
     }
 }

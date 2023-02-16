@@ -313,6 +313,7 @@ open class SBUBaseChannelSettingViewController: SBUBaseViewController {
             return
         }
         let memberListVC = SBUMemberListViewController(channel: channel)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     
@@ -324,6 +325,7 @@ open class SBUBaseChannelSettingViewController: SBUBaseViewController {
             return
         }
         let moderationsVC = SBUModerationsViewController(channel: channel)
+        moderationsVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(moderationsVC, animated: true)
     }
     
@@ -351,6 +353,7 @@ open class SBUBaseChannelSettingViewController: SBUBaseViewController {
         }
         
         let memberListVC = SBUMemberListViewController(channel: channel, type: .participants)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     

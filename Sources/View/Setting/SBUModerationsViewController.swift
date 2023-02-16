@@ -277,6 +277,7 @@ open class SBUModerationsViewController: SBUBaseViewController {
             return
         }
         let memberListVC = SBUMemberListViewController(channel: channel, type: .operators)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     
@@ -291,6 +292,7 @@ open class SBUModerationsViewController: SBUBaseViewController {
             return
         }
         let memberListVC = SBUMemberListViewController(channel: channel, type: .mutedMembers)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     
@@ -305,6 +307,7 @@ open class SBUModerationsViewController: SBUBaseViewController {
             return
         }
         let memberListVC = SBUMemberListViewController(channel: channel, type: .bannedMembers)
+        memberListVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(memberListVC, animated: true)
     }
     

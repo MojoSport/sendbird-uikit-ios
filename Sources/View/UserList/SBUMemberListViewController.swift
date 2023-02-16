@@ -543,6 +543,7 @@ open class SBUMemberListViewController: SBUBaseViewController {
         
         let type: ChannelInviteListType = self.memberListType == .operators ? .operators : .users
         let inviteUserVC = SBUInviteUserViewController(channel: channel, type: type)
+        inviteUserVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(inviteUserVC, animated: true)
     }
     

@@ -671,6 +671,7 @@ open class SBUChannelViewController: SBUBaseChannelViewController {
         guard let channel = self.channel else { return }
         
         let channelSettingsVC = SBUChannelSettingsViewController(channel: channel)
+        channelSettingsVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(channelSettingsVC, animated: true)
     }
     

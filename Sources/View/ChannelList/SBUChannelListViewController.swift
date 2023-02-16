@@ -611,6 +611,8 @@ open class SBUChannelListViewController: SBUBaseChannelListViewController {
             channelUrl: channelUrl,
             messageListParams: messageListParams
         )
+
+        channelVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(channelVC, animated: true)
     }
     
@@ -630,6 +632,7 @@ open class SBUChannelListViewController: SBUBaseChannelListViewController {
     /// - Parameter type: Using the Specified Type in CreateChannelViewController (default: `.group`)
     open func showCreateChannel(type: ChannelType = .group) {
         let createChannelVC = SBUCreateChannelViewController(type: type)
+        createChannelVC.navigationItem.backButtonTitle = ""
         self.navigationController?.pushViewController(createChannelVC, animated: true)
     }
     
